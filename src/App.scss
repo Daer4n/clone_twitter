@@ -1,0 +1,69 @@
+@import "bourbon";
+
+
+.page {
+
+}
+
+.third {
+	position: absolute;
+	height: 100%;
+	width: 33%;
+	border: 1px solid white;
+	align-content: center;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+.menu {
+	ul {
+		margin: auto;
+		width: 50%;
+		list-style-type: none;
+
+		li {
+			height: 30px;
+			width: 100px;
+			margin-bottom: 20px;
+
+			a {
+				font-size: 20px;
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+				padding: 10px 20px 10px 20px;
+
+				span.icon {
+					height: 24px;
+					width: 24px;
+				}
+
+				&:last {
+					background-color: lightblue;
+					border: 1px solid lightblue;
+					border-radius: 30px;
+					text-align: center;
+				}
+
+				&:hover {
+					background-color: lightgrey;
+					border: 1px solid lightgrey;
+					border-radius: 30px;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	left: 33%;
+}
+
+.picto {
+	height: 16px;
+	width: 16px;
+}
