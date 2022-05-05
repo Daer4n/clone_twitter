@@ -1,57 +1,53 @@
-@import "bourbon";
-
-
 .page {
-
+	color: white;
 }
 
-.third {
+.part {
 	position: absolute;
 	height: 100%;
-	width: 33%;
-	border: 1px solid white;
 	align-content: center;
+
+	&.side {
+		width: 29%;
+
+		&.left {
+			border-right: 1px solid darkslategrey;
+		}
+
+		&.right {
+			border-left: 1px solid darkslategrey;
+		}
+	}
+
+	&.center {
+		width: 39%;
+	}
 }
 
-.title {
-	font-weight: bold;
-	font-size: 25px;
-	margin-left: 10px;
-}
+
 
 .menu {
 	ul {
 		margin: auto;
-		width: 50%;
+		width: 100%;
 		list-style-type: none;
 
 		li {
 			height: 30px;
-			width: 100px;
-			margin-bottom: 20px;
+			width: 150px;
+			margin: 15px 0 30px 0;
 
 			a {
 				font-size: 20px;
 				text-decoration: none;
+				border: 1px solid black;
 				color: white;
 				font-weight: bold;
 				padding: 10px 20px 10px 20px;
 
-				span.icon {
-					height: 24px;
-					width: 24px;
-				}
-
-				&.send {
-					background-color: lightblue;
-					border: 1px solid lightblue;
-					border-radius: 30px;
-					text-align: center;
-				}
-
 				&:hover {
-					background-color: lightgrey;
-					border: 1px solid lightgrey;
+					background-color: darkslategrey;
+					border: 1px solid darkslategrey;
 					border-radius: 30px;
 				}
 			}
@@ -60,10 +56,110 @@
 }
 
 .content {
-	left: 33%;
+	left: 29%;
+
+	.title {
+		font-weight: bold;
+		font-size: 25px;
+		margin-left: 10px;
+		color: white;
+	}
+
+	.what-new {
+		padding-bottom: 3rem;
+		border-bottom: solid 1px darkslategray;
+
+		.text-what-new {
+			background: black;
+			border: 1px solid black;
+			height: 50px;
+			width: 70%;
+			margin: 0 15px;
+			font-size: 20px;
+			color: white;
+
+			&:focus {
+				outline: 1px solid black;
+			}
+		}
+
+		.btn-what-new {
+			color: white;
+			font-size: 17px;
+			font-weight: bold;
+			padding: 8px 20px;
+			text-decoration: none;
+		}
+	}
+
+	.touit {
+		width: 100%;
+		border-bottom: solid 1px darkslategray;
+
+		.author {
+
+			.profile-picture {
+				border-radius: 100%;
+				height: 24px;
+				width: 24px;
+			}
+		}
+
+		.touit-content {
+		}
+	}
+}
+
+.footer {
+	left: 68%;
+	padding: 10px 20px;
+
+	svg {
+		margin-right: -50px;
+	}
+
+	.searchbar {
+		background: darkslategrey;
+		border: 1px solid black;
+		border-radius: 20px;
+		height: 50px;
+		width: 70%;
+		margin: 0 15px 0 15px;
+		font-size: 20px;
+		color: white;
+		margin-top: 3%;
+	}
+}
+
+.icon {
+	position: relative;
+	left: -7px;
+	top: 4px;
 }
 
 .picto {
 	height: 16px;
 	width: 16px;
+}
+
+.btn-main {
+	background-color: rgb(29 155 240) !important;
+	border: 1px solid rgb(29 155 240) !important;
+	border-radius: 30px;
+	text-align: center;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #708090;
+	border-radius: 20px;
+	// border: 3px solid darkslategrey;
+	border: none;
 }
